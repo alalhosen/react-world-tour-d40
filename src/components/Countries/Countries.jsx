@@ -14,7 +14,10 @@ const Countries = () => {
       .then((data) => setCountries(data));
   }, []);
 
-  
+  const handleVisitedCountry = country =>{
+    console.log('add this to your visited country');
+    // console.log('country')
+  }
 
   return (
     <div>
@@ -27,7 +30,9 @@ const Countries = () => {
       </div>
       <div className="country-container">
         {countries.map((country) => (
-          <Country key={country.cca3} country={country}></Country>
+          <Country key={country.cca3} 
+          handleVisitedCountry={handleVisitedCountry}
+          country={country}></Country>
         ))}
       </div>
     </div>
