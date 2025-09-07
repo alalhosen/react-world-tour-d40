@@ -28,7 +28,6 @@ const Country = ({ country, handleVisitedCountry }) => {
     setVisited(!visited);
   };
 
-
   return (
     <div className={`country ${visited ? "visited" : "non-visited"}`}>
       <h2 style={{ color: visited ? "purple" : "black" }}>
@@ -40,7 +39,9 @@ const Country = ({ country, handleVisitedCountry }) => {
       <p>Area : {area}</p>
       <p>Tid : {tid}</p>
       <img src={flags.png} alt="" />
-      <button onClick={() =>handleVisitedCountry(country)}>Mark visited</button>
+      <button onClick={() => handleVisitedCountry(country)}>
+        Mark visited
+      </button>
       <br />
       <button onClick={handleVisited}>{visited ? "Visited" : "Going"}</button>
       {visited ? "I have visited this country" : "I want to visit."}
