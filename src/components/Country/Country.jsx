@@ -16,7 +16,7 @@ import "./Countey.css";
 
 // export default Country;
 
-const Country = ({ country, handleVisitedCountry }) => {
+const Country = ({ country, handleVisitedCountry, handleVisitedFlags }) => {
   const { name, flags, population, area, languages, capital, tid } = country;
 
   // first language বের করা
@@ -42,6 +42,8 @@ const Country = ({ country, handleVisitedCountry }) => {
       <button onClick={() => handleVisitedCountry(country)}>
         Mark visited
       </button>
+      <br />
+      <button onClick={() => handleVisitedFlags(country.flags.png)}>Add Flag</button>
       <br />
       <button onClick={handleVisited}>{visited ? "Visited" : "Going"}</button>
       {visited ? "I have visited this country" : "I want to visit."}
