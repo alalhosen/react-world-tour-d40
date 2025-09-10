@@ -50,7 +50,7 @@ const Country = ({ country, handleVisitedCountry, handleVisitedFlags }) => {
       <br />
       <button onClick={handleVisited}>{visited ? "Visited" : "Going"}</button>
       {visited ? "I have visited this country" : "I want to visit."}
-      <br />
+      <hr />
       <CountryDetail>
         country = {country}
         handleVisitedCountry = {handleVisitedCountry}
