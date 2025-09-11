@@ -11,6 +11,7 @@ const CountryDetail = (props) => {
   return (
     <div>
       <h2>Country Detail</h2>
+      <p>Country details are inportant</p>
       <br />
       {/* <CountryData
         country={country}
