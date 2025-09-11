@@ -7,7 +7,7 @@ const CountryDetail = (props) => {
 //   handleVisitedCountry,
 //   handleVisitedFlags,
 // }) => {
-  const {country, handleVisitedCountry,handleVisitedFlags} = props
+  const {country, handleVisitedCountry,handleVisitedFlags} = props 
   return (
     <div>
       <h2>Country Detail</h2>
